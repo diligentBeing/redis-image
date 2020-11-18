@@ -6,6 +6,7 @@ import { TicketUpdatedListener } from "./events/listeners/ticketUpdatedListener"
 import { ExpirationCompletedListener } from "./events/listeners/expirationCompletedListener";
 import { PaymentCreatedListener } from "./events/listeners/paymentCreatedListener";
 const start = async () => {
+  console.log("starting orders service....");
   if (!process.env.JWT_KEY) {
     throw new Error("JWT value not found");
   }
